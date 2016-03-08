@@ -7,7 +7,7 @@
 //
 
 #import "AppDelegate.h"
-
+#import "QiYiTabbarController.h"
 @interface AppDelegate ()
 
 @end
@@ -16,7 +16,13 @@
 
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
-    // Override point for customization after application launch.
+
+    self.window = [[UIWindow alloc]initWithFrame:[UIScreen mainScreen].bounds];
+    self.window.backgroundColor = [UIColor yellowColor];
+    [self.window makeKeyAndVisible];
+    
+    self.window.rootViewController = [[QiYiTabbarController alloc]init];
+    
     return YES;
 }
 

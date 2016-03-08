@@ -1,5 +1,5 @@
 //
-//  ViewController.h
+//  QiYiTabbarController.h
 //  AiQIyIVideo
 //
 //  Created by einsphy on 16/3/8.
@@ -8,8 +8,6 @@
 
 #import <UIKit/UIKit.h>
 
-@interface ViewController : UIViewController
-
+@interface QiYiTabbarController : UITabBarController
 
 @end
-
