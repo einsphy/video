@@ -8,6 +8,7 @@
 
 #import "QiYiTabbarController.h"
 #import "QiYiViewController.h"
+#import "TestViewController.h"
 @interface QiYiTabbarController ()
 
 @end
@@ -17,7 +18,9 @@
 - (void)viewDidLoad {
     [super viewDidLoad];
 
-
+    TestViewController *testVC = [[TestViewController alloc]init];
+    
+    [self addChildVC:testVC title:@"123" image:@"familybook" selectedImage:@"familybook_highlight"];
 
 }
 
